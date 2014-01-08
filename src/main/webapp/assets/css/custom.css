@@ -1,0 +1,94 @@
+/* here you can put your own css to customize and override the theme */
+/*icon sizes*/
+.i-small {
+	font-size: 20px;
+}
+
+.i-medium {
+	font-size: 35px;
+}
+
+.i-large {
+	font-size: 45px;
+}
+
+.blue {
+	color: #1885DB;
+}
+.green{
+	color:#69ba02
+}
+.light-blue {
+	color: #13C2FA;
+}
+
+.white {
+	color: #ffffff;
+}
+
+.sign-in {
+	min-height: 720px;
+}
+
+.inline-list {
+	margin: 0 auto 1.0625rem auto;
+	margin-left: -1.375rem;
+	margin-right: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.inline-list>li {
+	list-style: none;
+	float: left;
+	margin-left: 1.375rem;
+	display: block;
+}
+
+.inline-list>li>* {
+	display: block;
+}
+
+.page-main-frame{
+	background-color:white;
+	padding:75px 20px 20px 20px;
+}
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+.center{
+	text-align:center;
+	vertical-align:center;
+}
+.profile-image-small{
+	height:40px;
+}
+
+.balance{
+	padding:15px 15px 15px 15px;
+}
+
+.ah-items{
+	padding-top:15px;
+}
+
+.thumbnail:hover{
+	border-color:#16CA24
+}
+
+.border-right{
+	border-right:1px solid #999
+}
+
+.auction-post-container{
+	padding-bottom:25px;
+	padding-top:25px
+}
+.title-header{
+	border-bottom:1px solid #afadac;
+
+}
