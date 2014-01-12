@@ -84,7 +84,9 @@ session_start();
 
 <script>
 $(document).ready(function(){
-	if("<% //session.getAttribute("user")!= null; %>"){
+    
+    var admin=<%= session.getAttribute("user")%>;
+   if(admin !== null ){
 		
 		document.getElementById("userLoggedin").style.display="block";
 		document.getElementById("anonUser").style.display="none";
@@ -104,7 +106,8 @@ $(document).ready(function(){
 			<!-- BEGIN TOP NAVIGATION BAR -->
 			<div class="header-inner">
 				<!-- BEGIN LOGO -->
-				<a class="navbar-brand" href="main.php">One Chance | Beta </a>
+				<a class="navbar-brand" href="main.jsp
+				">One Chance | Beta </a>
 				<!-- END LOGO -->
 				<!-- SEARCH BAR -->
 
@@ -121,7 +124,7 @@ $(document).ready(function(){
 						<!--  END FORUMS HOUSE -->
 
 						<!-- BEGIN AUCTION HOUSE -->
-						<li><a href="AuctionHouse.php"><i
+						<li><a href="AuctionHouse.jsp"><i
 								class=" fa fa-dollar i-small light-blue"></i> </a></li>
 						<li><span class="sep"></span>
 						</li>
@@ -130,7 +133,7 @@ $(document).ready(function(){
 						<!-- BEGIN USER LOGIN DROPDOWN -->
 						<li class="dropdown user"><a href="#" class="dropdown-toggle"
 							data-toggle="dropdown"> <img class="profile-image-small" alt=""
-								src="assets/img/profile/profile-small.jpg" /> <span class="username">Chew
+								src="http://placehold.it/55x55&text=:)" /> <span class="username">Chew
 									Swee Hau</span> <i class="fa fa-angle-down"></i>
 						</a>
 							<ul class="dropdown-menu">
@@ -142,7 +145,7 @@ $(document).ready(function(){
 
 								</li>
 								<li class="divider"></li>
-								<li><a href="process/processLogout.php"><i class="fa fa-key"></i>
+								<li><a href="/sports/processLogout"><i class="fa fa-key"></i>
 										Log Out</a></li>
 							</ul></li>
 							<li class="green "><label class="balance">$0.00</label></li>
@@ -155,7 +158,7 @@ $(document).ready(function(){
 
 					<ul class="nav navbar-nav navbar-right">
 						<li><form class="navbar-form form-inline" role="form"
-								action="process/processLogin.php" method="post">
+								action="/sports/processLogin" method="post">
 
 								<div class="form-group">
 									<label class="sr-only">Email address</label> <input
